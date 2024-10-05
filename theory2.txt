@@ -1,0 +1,37 @@
+The code implements a simple Tic Tac Toe game in Python where a human player competes against an AI. The AI uses the Minimax algorithm to determine optimal moves.
+
+Code Breakdown
+Imports and Constants:
+
+Imports the copy module (not used).
+Defines constants for players (PLAYER_X, PLAYER_O) and an empty cell (EMPTY).
+Functions:
+
+print_board(board): Displays the current game board.
+is_winner(board, player): Checks if the specified player has won.
+is_board_full(board): Checks if the board is full.
+get_empty_cells(board): Returns a list of empty cell coordinates.
+minimax(board, depth, maximizing_player): Implements the Minimax algorithm recursively to evaluate moves and outcomes. It:
+Returns the outcome if the game is over.
+Maximizes or minimizes the score based on whose turn it is.
+Simulates moves and evaluates the results.
+find_best_move(board): Uses the Minimax function to find the best move for the AI.
+Game Flow:
+
+play_tic_tac_toe(): Controls the main game loop:
+Initializes the board and prompts the human for input.
+Validates the human's move and updates the board.
+Checks for a winner or a full board.
+Uses the AI’s move determined by the Minimax algorithm.
+Repeats until the game ends.
+Running the Game:
+
+The game starts by calling play_tic_tac_toe(), prompting the human for moves until there is a winner or a tie.
+Example Game Flow
+The board is displayed and the human player enters moves.
+The AI responds based on its strategy until either the human or AI wins, or the board is full.
+This implementation effectively demonstrates how a human can interact with an AI opponent using established algorithms for decision-making in a classic game.
+
+
+
+
